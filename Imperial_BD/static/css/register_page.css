@@ -1,0 +1,48 @@
+.fields_reg{
+text-shadow: 0 0 20px green;
+font-size: 35px !important;
+font-family: "Consolas" !important;
+/* #padding: 8% 20px 20px 0%;   HERE IS PADDING*/
+text-indent: 22px;
+color: green !important;
+text-align: center;
+}
+
+
+.text-main{
+text-shadow: 0 0 20px white;
+font-size: 40px !important;
+text-align: left;
+font-family: "Consolas" !important;
+/* #padding: 8% 20px 20px 0%;   HERE IS PADDING*/
+text-indent: 22px;
+color: white !important;
+text-align: center;
+}
+h1
+{
+  text-shadow: 0 0 20px #8B0000;
+  font-size: 80px !important;
+  text-align: left;
+  font-family: "Consolas" !important;
+  /* #padding: 8% 20px 20px 0%;   HERE IS PADDING*/
+  text-indent: 22px;
+  color: #8B0000 !important;
+  text-align: center;
+}
+.enter_button
+{
+  text-shadow: 0 0 20px #8B0000;
+  font-size: 30px !important;
+  text-align: left;
+  font-family: "Consolas" !important;
+  /* #padding: 8% 20px 20px 0%;   HERE IS PADDING*/
+  text-indent: 22px;
+  color: black !important;
+  text-align: center;
+}
+
+body {
+   background: url(fon.png) no-repeat;
+    background-size: 100% auto;
+  }

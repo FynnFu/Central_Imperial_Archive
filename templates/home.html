@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}" xmlns="http://www.w3.org/1999/html">
+{% endblock %}
+{% block content %}
+  <div class="box">
+    <p class = "text-main">
+      Добро пожаловать, {{ user.username }}
+    </p>
+    <p class="remember">
+      <script src="{% static 'scripts/remember.js' %}"></script>
+    </p>
+      <form action="{% url 'home' %}" method="post">
+          {% csrf_token %}
+    <p class = "search">
+      Введите запрос: <label>
+        <input type="text" name="db_search"
+        value="" size="30" maxlength="50">
+    </label>
+    </p>
+    <p class = "search_button">
+      <button type="submit">ПОИСК</button>
+    </p>
+        </form>
+  <ul>
+  {% for user in list_user %}
+      <li><a href="{% url 'dossier' user.id %}">{{ user.first_name }}</a></li>
+  {% endfor %}
+  </ul>
+  </div>
+{% endblock %}

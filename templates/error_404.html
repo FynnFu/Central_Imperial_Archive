@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/error_404.css' %}">
+{% endblock %}
+{% block content %}
+    <p class = "text-main">
+        ТУГАРИН ВАС ЗДЕСЬ НЕ ЖДАЛ!
+        <br>Данная страница недоступна или она отсутствует в базе!</br>
+        <img src="{% static 'image/tugarin.png' %}" alt="">
+        </p>
+{% endblock %}

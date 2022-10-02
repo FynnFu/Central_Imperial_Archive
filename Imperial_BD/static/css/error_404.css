@@ -1,0 +1,23 @@
+.text-main{
+  text-shadow: 0 0 20px white;
+  font-size: 40px !important;
+  text-align: left;
+  font-family: "Consolas" !important;
+  text-indent: 22px;
+  color: white !important;
+  text-align: center;
+}
+h1 {
+  text-shadow: 0 0 20px #8B0000;
+  font-size: 80px !important;
+  text-align: left;
+  font-family: "Consolas" !important;
+  text-indent: 22px;
+  color: #8B0000 !important;
+  text-align: center;
+}
+
+body {
+ background: url(fon_error404.jpg) no-repeat;
+ background-size: 100% auto;
+}
