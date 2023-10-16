@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}" xmlns="http://www.w3.org/1999/html">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+{% endblock %}
+{% block content %}
+  <div class="box">
+    <p class = "text-main">
+      Добро пожаловать, {{ user.first_name }}
+    </p>
+    <p class="remember">
+      <script src="{% static 'scripts/remember.js' %}"></script>
+    </p>
+      <form action="{% url 'home' %}" method="post">
+          {% csrf_token %}
+    <p class = "search">
+      Введите запрос: <label>
+        <input type="text" name="db_search"
+        value="" size="30" maxlength="50">
+    </label>
+    </p>
+    <p class = "search_button">
+      <button type="submit">ПОИСК</button>
+    </p>
+        </form>
+    <p class = "chat_btn">
+      <a href="{% url 'chat' %}">Секретный чат</a>
+    </p>
+    {% if list_user %}
+        <p class="found_pages" style="color: red; font-size: 30px; text-shadow: 0 0 20px red; text-decoration: none; text-align: center; font-family: Arial;">{{ msg }}</p>
+        <ul style="color: #00fa9a; font-size: 25px; text-shadow: 0 0 20px #00fa9a; text-decoration: none; text-align: center; list-style-type: none;">
+        {% for user in list_user %}
+            <li style="color: #00fa9a; font-size: 25px; text-shadow: 0 0 20px #00fa9a; text-decoration: none; text-align: center; list-style-type: none;"><a href="{% url 'dossier' user.id %}" style="color: #00fa9a; font-size: 35px; text-shadow: 0 0 20px #00fa9a; text-decoration: none; text-align: center; list-style-type: none; font-family: Arial;">{{ user.first_name }} ({{ user.universe }})</a></li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p class="found_pages" style="color: red; font-size: 30px; text-shadow: 0 0 20px red; text-decoration: none; text-align: center; font-family: Arial;">{{ msg }}</p>
+    {% endif %}
+
+  </div>
+{% endblock %}

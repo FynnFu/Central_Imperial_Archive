@@ -1,0 +1,108 @@
+.text-main {
+  text-shadow: 0 0 20px white;
+  font-size: 40px !important;
+  text-align: left;
+  font-family: "Arial" !important;
+
+  text-indent: 22px;
+  color: white !important;
+  text-align: center;
+}
+h1 {
+  text-shadow: 0 0 10px #8B0000;
+  font-size: 80px !important;
+  text-align: left;
+  font-family: "Arial" !important;
+
+  text-indent: 22px;
+  color: #8B0000 !important;
+  text-align: center;
+}
+
+.search{
+  text-shadow: 0 0 20px white;
+  font-size: 30px !important;
+  text-align: left;
+  font-family: "Arial" !important;
+
+  text-indent: 22px;
+  color: white !important;
+  text-align: center;
+}
+
+.search_button {
+  text-shadow: 0 0 20px white;
+  font-size: 30px !important;
+  text-align: left;
+  font-family: "Arial" !important;
+  /* #padding: 8% 20px 20px 0%;   HERE IS PADDING*/
+  text-indent: 22px;
+  color: black !important;
+  text-align: center;
+}
+.chat_btn {
+  text-shadow: 0 0 20px white;
+  font-size: 30px !important;
+  text-align: left;
+  font-family: "Arial" !important;
+  text-indent: 22px;
+  color: black !important;
+  text-align: center;
+}
+body {
+  background: url(fon_main.jpg) no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.remember {
+  font-size: 35px;
+  color: #008f11;
+  text-shadow: 0 0 10px #008f11;
+  text-align: center;
+}
+
+ul {
+    color: white;
+text-shadow: 0 0 20px white;
+text-decoration: none;
+text-align: center;
+font-size: 30px;
+list-style-type: none;
+
+
+}
+
+a {
+color: white;
+text-shadow: 0 0 20px white;
+text-decoration: none;
+text-align: center;
+font-size: 30px;
+list-style-type: none;
+}
+
+
+li {
+color: white;
+text-shadow: 0 0 20px white;
+text-decoration: none;
+text-align: center;
+font-size: 30px;
+list-style-type: none;
+
+}
+
+
+.found_pages {
+    color: red;
+    font-size: 30px;
+    text-shadow: 0 0 20px red;
+    text-decoration: none;
+    text-align: center;
+    list-style-type: none;
+
+
+
+}

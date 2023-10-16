@@ -1,0 +1,93 @@
+
+
+.text-main{
+text-shadow: 0 0 20px white;
+font-size: 40px !important;
+text-align: left;
+font-family: "Arial" !important;
+/* #padding: 8% 20px 20px 0%;   HERE IS PADDING*/
+text-indent: 22px;
+color: white !important;
+text-align: center;
+}
+h1
+{
+  text-shadow: 0 0 10px #8B0000;
+  font-size: 80px !important;
+  text-align: left;
+  font-family: "Arial" !important;
+  /* #padding: 8% 20px 20px 0%;   HERE IS PADDING*/
+  text-indent: 22px;
+  color: #8B0000 !important;
+  text-align: center;
+}
+
+.search{
+text-shadow: 0 0 20px white;
+font-size: 30px !important;
+text-align: left;
+font-family: "Arial" !important;
+/* #padding: 8% 20px 20px 0%;   HERE IS PADDING*/
+text-indent: 22px;
+color: white !important;
+text-align: center;
+}
+
+.search_button
+{
+  text-shadow: 0 0 20px white;
+  font-size: 30px !important;
+  text-align: left;
+  font-family: "Arial" !important;
+  /* #padding: 8% 20px 20px 0%;   HERE IS PADDING*/
+  text-indent: 22px;
+  color: black !important;
+  text-align: center;
+}
+
+body {
+   background: url(fon_main.jpg) no-repeat;
+ background-position: center center;
+ background-attachment: fixed;
+ background-size: cover;
+  }
+
+.remember{
+font-size: 35px;
+color: #008f11;
+text-shadow: 0 0 10px #008f11;
+text-align: center;
+font-family: "Arial" !important;
+}
+
+.dossier_window {
+align-items: center;
+font-family: 'Arial';
+ font-size: 25px;
+  width: 1500px;
+  height: 2000px;
+  background: white;
+  #opacity: 70%;
+  text-align: left;
+  margin-left: 20%;
+  padding-left: 1%;
+  padding-top: 1%;
+  z-index: 0;
+   position: relative;
+}
+
+.wiki_mini_wnd {
+  padding-top: 1%;
+  width: 400px;
+  height: 1400px;
+  text-align: center;
+  background: white;
+  outline: 1px solid gray;
+  align-items: center;
+  font-family: 'Arial';
+   font-size: 20px;
+   margin-left: 63%;
+   z-index: 1;
+    position: absolute;
+    word-wrap: break-word;
+}

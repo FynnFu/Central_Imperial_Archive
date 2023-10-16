@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/dossier.css' %}" xmlns="http://www.w3.org/1999/html">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+{% endblock %}
+{% block content %}
+    <p class = "text-main">
+    </p>
+    <p class="remember">
+      <script src="{% static 'scripts/remember.js' %}"></script>
+    </p>
+
+
+<form action="{% url 'home' %}" method="post">
+          {% csrf_token %}
+    <p class = "search">
+      Введите запрос: <label>
+        <input type="text" name="db_search"
+        value="" size="30" maxlength="50">
+    </label>
+    </p>
+    <p class = "search_button">
+      <button type="submit">ПОИСК</button>
+    </p>
+        </form>
+    <div class = "dossier_window">
+        {% for user in user %}
+        <div class = "boigraphy_field">
+            {{ user.biography|safe }}
+            </div>
+
+      <div class="joke">Виктор - гомосек!</div>
+      <div class="wiki_mini_wnd">
+
+        <strong>{{ user.first_name }}</strong>
+        <hr>
+        <img src="{{ user.photo.url }}" alt="" width="95%" height="35%">
+        <hr>
+        <br><strong>Пол: {{ user.gender }}</strong></br>
+        <hr>
+        <br><strong>Дата рождения: {{ user.birth_date }}</strong></br>
+        <hr>
+        <br><strong>Дом: {{ user.dynasty }}</strong></br>
+        <hr>
+        <br><strong>Рост: {{ user.tall }}</strong></br>
+        <hr>
+        <br><strong>Цвет волос: {{ user.hair_color }}</strong></br>
+        <hr>
+        <br><strong>Цвет глаз: {{ user.eye_color }}</strong></br>
+        <hr>
+        <br><strong>Семейное положение: {{ user.marital_status }}</strong></br>
+          <hr>
+          <br><strong>Прозвища: {{ user.joke_names }}</strong></br>
+          <hr>
+          <br><strong>Род занятий: {{ user.job }}</strong></br>
+          <hr>
+          <br><strong>Организации: {{ user.organizations }}</strong></br>
+          {% endfor %}
+        </div>
+      </div>
+      <script src="{% static 'scripts/main.js' %}"></script>
+      <marquee behavior="alternate" direction="left" bgcolor="#00CED1" height="40px">
+    Новость дня: Господин облысел!
+  </marquee>
+{% endblock %}

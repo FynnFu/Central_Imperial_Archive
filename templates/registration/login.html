@@ -1,0 +1,31 @@
+{% extends  'base.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/register_page.css' %}" xmlns="http://www.w3.org/1999/html">
+    <title>CIA</title>
+{% endblock %}
+{% block content %}
+    <div class="box">
+        <p class = "text-main">
+        ТРЕБУЕТСЯ ВХОД В АРХИВ
+        <br>Для получения учетной записи обратитесь в Тайную Канцелярию</br>
+</p>
+
+
+    <form method="post">
+      {% csrf_token %}
+      <table>
+          <p class = "fields_reg">{{ form.as_p }}</p>
+
+        <tr>
+          <td>&nbsp;</td>
+            <td><input type="submit" value="Submit"></td>
+        </tr>
+      </table>
+    </form>
+
+
+
+</div>
+
+{% endblock %}
